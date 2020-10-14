@@ -4,6 +4,9 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/pages/Footer/Footer.js";
 import Home from "./components/pages/HomePage/Home";
+import Services from "./components/pages/Services/Services";
+import Products from "./components/pages/Products/Products.js";
+import SignUp from "./components/pages/SignUp/SignUp";
 
 class App extends Component {
   render() {
@@ -12,6 +15,9 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/services" component={Services} />
+          <Route path="/products" component={Products} />
+          <Route path="/sign-up" component={SignUp} />
         </Switch>
         <Footer />
       </Router>
